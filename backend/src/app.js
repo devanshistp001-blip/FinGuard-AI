@@ -8,6 +8,7 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 
 const app = express();
 const allowedOrigins = new Set([
+  'https://finguard-ai-1-qmin.onrender.com',
   'http://localhost:5173',
   'http://localhost:5174',
   'http://localhost:5175',
