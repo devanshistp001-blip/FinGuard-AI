@@ -6,6 +6,6 @@ dotenv.config({ path: path.resolve(process.cwd(), '.env') });
 
 const port = Number(process.env.PORT || 3001);
 
-app.listen(port, () => {
-  console.log(`FinGuard AI backend running on http://localhost:${port}`);
+app.listen(port, "0.0.0.0", () => {
+  console.log(`FinGuard AI backend running on port ${port}`);
 });
